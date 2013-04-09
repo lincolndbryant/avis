@@ -1,0 +1,30 @@
+<h3>Car Rental Summary</h3>
+<div class="base-rate">
+	Base Rate for {{duration}} days.
+	<span class="rate">${{total_rate}}<span>
+</div>
+<div class="rental-options">
+	<span class="title">Rental Options</span>
+	<span class="value">${{ extras_total }}</span>
+	<ul class="extras">
+	{{#each extras}}
+		<li>{{ name }} - ${{ price_daily }}</li>
+	{{/each}}
+	</ul>
+</div>
+<div class="coverages">
+	<span class="title">Protections and Coverages<span>	
+</div>
+<div class="taxes">
+	<span class="title">Taxes, Fess, and Surcharges<span>
+	<span class="value">{{ taxes_total }}</span>
+</a>
+<div class="estimated-total">
+	<span class="title">Estimated Total</title>
+	<span class="value">{{ estimate_total }}</span>
+</div>
+<div class="amount-prepaid">
+	<span class="title">Amount Prepaid</title>
+	<span class="value">{{ amount_prepaid }}</span>
+</div>
+<p>Mumbo Jumbo</p>
